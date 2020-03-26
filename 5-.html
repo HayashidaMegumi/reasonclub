@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>REASON</title>
+	<meta name="description" content="Free Responsive Html5 Css3 Templates">
+	<meta name="author" content="">
+	
+    <!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+	================================================== -->
+  	<link rel="stylesheet" href="https://ccreason.oss-cn-beijing.aliyuncs.com/websource/css/zerogrid.css">
+	<link rel="stylesheet" href="https://ccreason.oss-cn-beijing.aliyuncs.com/websource/css/style.css">
+	
+	<!-- Custom Fonts -->
+<!--    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+	
+	
+	<link rel="stylesheet" href="https://ccreason.oss-cn-beijing.aliyuncs.com/websource/css/menu.css">
+	<script src="https://ccreason.oss-cn-beijing.aliyuncs.com/websource/js/jquery1111.min.js" type="text/javascript"></script>
+	<script src="https://ccreason.oss-cn-beijing.aliyuncs.com/websource/js/script.js"></script>
+	
+	<!-- Owl Carousel Assets -->
+    <link href="https://ccreason.oss-cn-beijing.aliyuncs.com/websource/owl-carousel/owl.carousel.css" rel="stylesheet">
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/Items/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<style>
+      header {
+        /* padding: 40px 0 0px; */
+      }
+    </style>
+</head>
+
+<body>
+	<div class="wrap-body">
+		
+		<header class="main-header">
+			<div class="zerogrid">
+				<!--Top-->
+				<div class="t-center">
+					<a class="site-branding" href="index.html">
+						<img src="https://ccreason.oss-cn-beijing.aliyuncs.com/websource/images/nlogo.png" width="300px"/>	
+					</a><!-- .site-branding -->
+					
+					<!-- Menu-main -->
+					<div id="cssmenu" class="align-center">
+						<ul>
+              <li><a href="index.html"><span>Home</span></a></li>
+              <li class="active"><a href='5-.html'><span>5-</span></a></li>
+              <li><a href='6.html'><span>6</span></a></li>
+              <li><a href='7.html'><span>7</span></a></li>
+              <li class='last'><a href='8+.html'><span>8+</span></a></li>
+           </ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!--////////////////////////////////////Container-->
+		<section id="container">
+			<div class="wrap-container">
+				<div id="main-content">
+					<div class="wrap-content">
+						<div class="zerogrid">
+							<div class="row" id="gallery">
+                <!-- 111111111111111111111111111 -->
+								<div class="col-1-3">
+									<div class="wrap-col">
+												
+											<template v-for="item in first_col">
+													<a class="portfolio-box zoom-effect">
+															<img :src="item.face_img" class="img-responsive" alt="">
+															<div class="portfolio-box-caption">
+																<div class="portfolio-box-caption-content">
+																	<div class="project-name">
+																		<span>#{{ item.name }}</span>
+																	</div>
+																	<div class="project-name">
+																		<span>{{ item.players }}*{{ item.price }}</span>
+																	</div>
+																</div>
+															</div>
+														</a>
+											</template>
+
+									</div>
+                </div>
+                <!-- 222222222222222222222222222222222 -->
+                <div class="col-1-3">
+                    <div class="wrap-col">
+
+												<template v-for="item in second_col">
+														<a class="portfolio-box zoom-effect">
+																<img :src="item.face_img" class="img-responsive" alt="">
+																<div class="portfolio-box-caption">
+																	<div class="portfolio-box-caption-content">
+																		<div class="project-name">
+																			<span>#{{ item.name }}</span>
+																		</div>
+																		<div class="project-name">
+																			<span>{{ item.players }}*{{ item.price }}</span>
+																		</div>
+																	</div>
+																</div>
+															</a>
+												</template>
+                          
+                    </div>
+                  </div>
+                  <!-- 333333333333333333333333333333333 -->
+                  <div class="col-1-3">
+                      <div class="wrap-col">
+
+													<template v-for="item in third_col">
+															<a class="portfolio-box zoom-effect">
+																	<img :src="item.face_img" class="img-responsive" alt="">
+																	<div class="portfolio-box-caption">
+																		<div class="portfolio-box-caption-content">
+																			<div class="project-name">
+																				<span>#{{ item.name }}</span>
+																			</div>
+																			<div class="project-name">
+																				<span>{{ item.players }}*{{ item.price }}</span>
+																			</div>
+																		</div>
+																	</div>
+																</a>
+													</template>
+                            
+                      </div>
+                    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--////////////////////////////////////Footer-->
+		<footer style="border-top: 0px solid #bbb;margin-top: 0px;">
+			<div class="zerogrid wrap-footer">
+          <div class="copyright">
+              本页面所显示的价格均为会员价
+            </div>
+				<div class="copyright">
+					Copyright @ - Reason Tabletop Role-playing Game Club
+        </div>
+        
+			</div>
+		</footer>
+		<!-- carousel -->
+		<script src="owl-carousel/owl.carousel.js"></script>
+		<script>
+		$(document).ready(function() {
+		  $("#owl-slide").owlCarousel({
+			autoPlay: 3000,
+			items : 1,
+			itemsDesktop : [1199,1],
+			itemsDesktopSmall : [979,1],
+			itemsTablet : [768, 1],
+			itemsMobile : [479, 1],
+			navigation: true,
+			navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+			pagination: false
+		  });
+		});
+		</script>
+		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+		<script>
+			var gallery = new Vue({
+				el: '#gallery',
+				data: {
+					first_col: [
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face/%E6%89%80%E7%BD%97%E9%97%A8%E7%9A%84%E5%BE%8B%E6%B3%95.png',
+							name: '所罗门的律法',
+							players: '5',
+							price: '78'
+						},
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face/%E5%B9%B4%E8%BD%AE.png',
+							name: '年轮',
+							players: '5',
+							price: '58'
+						},
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face/%E6%83%A0%E5%AD%90.jpg',
+							name: '惠子',
+							players: '5',
+							price: '68'
+						},
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face2/xinglai.png',
+							name: '醒来',
+							players: '5',
+							price: '78'
+						}
+					],
+					second_col: [
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face/%E7%AA%A5%E9%95%9C.jpg',
+							name: '窥镜',
+							players: '4',
+							price: '58'
+						},
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face/I%20Do.jpg',
+							name: 'I Do',
+							players: '5',
+							price: '58'
+						},
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face2/xinlizixunshi.jpg',
+							name: '心理咨询师',
+							players: '5',
+							price: '78'
+						}
+					],
+					third_col: [
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face/%E7%BA%AF%E6%83%85%E5%A4%AA%E7%9B%91%E4%BF%8F%E7%9A%87%E5%B8%9D.jpg',
+							name: '纯情太监俏皇帝',
+							players: '5',
+							price: '58'
+						},
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face/%E5%B1%80.jpg',
+							name: '局',
+							players: '5',
+							price: '58'
+						},
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face2/niedaoyiyun.jpg',
+							name: '孽岛疑云',
+							players: '5',
+							price: '58'
+						},
+						{
+							face_img: 'https://ccreason.oss-cn-beijing.aliyuncs.com/websource/face2/guimixinqiao.jpg',
+							name: '鬼迷心窍',
+							players: '5',
+							price: '58'
+						}
+					]
+				}
+			})
+		</script>
+	</div>
+</body>
+</html>
